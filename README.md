@@ -22,21 +22,9 @@ This project originates to Classifying statuses accurately via deel learning lea
 
 ## Deep learning Model
 
-*Feature Engineering*
-1. Mapping latitude and longitude to 3-dimensional coordinates so nearby continuous values would also be close in reality
-2. Converting categorical features to binary dummy variables
-3. Combining particular dummies and ranges of numeric features to highlight strong signals and illogical values for waterpoint status identified during EDA
-4. Selecting subsets of the total unique values for categorical features that were converted to dummies, according to the number of samples they were associated with and their contribution to certain statuses
-
 *Convolutional Neural Network*
   
-Logistic regression, k-nearest neighbors, and random forest classifiers were used before settling on random forest as the model with strongest cross-validation performance. Random forest feature importance ranking was used directly to guide the choice and order of variables to be included as the model underwent refinement.
-
-*Model Evaluation and Selection*
-  
-The entire training dataset of 59,400 records was split into 80/20 train vs. holdout, and all scores reported below were calculated with 5-fold cross validation on the training portion only. Predictions on the 20% holdout were limited to the very end, so this split was only used and scores seen just once.
-
-The official metric for DrivenData was classification rate (accuracy); however, class weights were included to improve performance against F1 score and provide a more useful real-world application where classification of the minority class (functional needs repair) would be essential.
+.
 
 
 **CNN** 
