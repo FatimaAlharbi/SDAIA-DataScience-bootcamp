@@ -42,25 +42,36 @@ The official metric for DrivenData was classification rate (accuracy); however, 
  The presentation slides here
  
  
- #How to run code
- ##Training the Model
- Download the data from kaggle.
-Only keep folders related to Potatoes.
-Run Jupyter Notebook in Browser.
+ # How to run code
+ ## Training the Model
+- Download the data from kaggle. [Kaggle](https://www.kaggle.com/emmarex/plantdisease/)
+- Only keep folders related to Tomatos.
+- Run Jupyter Notebook in Browser.
+```sh
+Jupyter Notebook
+```
+- Open training/training_CNN.ipynb in Jupyter Notebook.
+- In cell #2, update the path to dataset.
+- Run all the Cells one by one.
+- Copy the model generated and save it with the version number in the models folder.
 
-Open training/training_CNN.ipynb in Jupyter Notebook.
-In cell #2, update the path to dataset.
-Run all the Cells one by one.
-Copy the model generated and save it with the version number in the models folder.
 
-##Running the API
+## Running the API
 Using FastAPI
 
-Get inside api folder
+1- Get inside api folder
+
+```sh
 cd api
-Run the FastAPI Server using uvicorn
+```
+
+2- Run the FastAPI Server using uvicorn
+```sh
 uvicorn main:app --reload --host 0.0.0.0
-Your API is now running at 0.0.0.0:8000
+```
+
+3- Your API is now running at 0.0.0.0:8000
+
 use function predict to start predicting 
 
 
