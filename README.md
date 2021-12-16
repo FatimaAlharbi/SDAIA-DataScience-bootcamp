@@ -39,7 +39,7 @@ The official metric for DrivenData was classification rate (accuracy); however, 
 - FastAPI for deploy model as api
 
 ## Communication
- The presentation slides here
+ The presentation [slides here](https://github.com/FatimaAlharbi/SDAIA-DataScience-bootcamp/blob/58d5957efb536e30ab0d5100390c9aca0e802f95/SDAIA%20project.pptx)
  
  
  # How to run code
