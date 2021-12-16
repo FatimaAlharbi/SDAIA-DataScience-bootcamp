@@ -2,7 +2,7 @@
 Fatima Alharbi
 
 ## Abstract
-The goal of this project was to use classification models to predict the operating condition of waterpoints in Tanzania in order to help improve operations and maintenance planning of these units. I worked with data provided by [Taarifa](http://taarifa.org/) and the Tanzanian Ministry of Water, leveraging geographic and categorical feature engineering along with a random forest model to achieve promising results for this multiclass problem. After refining a model, I built an interactive dashboard to visualize and communicate my results using Tableau.      
+The goal of this project was to use classification model to clasify and identify the leaf status if infected by any disease or healthy . In order to help improve agriculture and make a good impact in sustainablity . I worked with data provided by [Kaggle](https://www.kaggle.com/emmarex/plantdisease/)  that contains many crops but to be more accurate I selected all related toTomato leafs , training along with a Convolutional Neural Network model to achieve promising results for this multiclass problem. After refining a model, I deploy the model to an API.      
 
 ## Design
 This project originates from the [DrivenData competition](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/) "Pump it Up: Data Mining the Water Table". The data is provided by [Taarifa](http://taarifa.org/) and the Tanzanian Ministry of Water, and presents a three-class operational status of **functional**, **functional needs repair**, and **non-functional** for waterpoints across the country. Classifying statuses accurately via machine learning models would enable the Tanzanian Ministry of Water to take action to improve operations and maintenance planning of these units, allocate resources more quickly to needed areas, and ensure potable water is accessible to as many people as possible.
@@ -10,7 +10,7 @@ This project originates from the [DrivenData competition](https://www.drivendata
 ## Data
  The dataset collected from Kaggle contains 27000 pictures includes 8 diseases and healthy leaf.
 
-## Algorithms
+## Deep learning Model
 
 *Feature Engineering*
 1. Mapping latitude and longitude to 3-dimensional coordinates so nearby continuous values would also be close in reality
@@ -44,13 +44,13 @@ The official metric for DrivenData was classification rate (accuracy); however, 
  
  # How to run code
  ## Training the Model
-- Download the data from kaggle. [Kaggle](https://www.kaggle.com/emmarex/plantdisease/)
+- Download the data from [Kaggle](https://www.kaggle.com/emmarex/plantdisease/).
 - Only keep folders related to Tomatos.
 - Run Jupyter Notebook in Browser.
 ```sh
 Jupyter Notebook
 ```
-- Open training/training_CNN.ipynb in Jupyter Notebook.
+- Open [training/training_CNN.ipynb] in Jupyter Notebook.
 - In cell #2, update the path to dataset.
 - Run all the Cells one by one.
 - Copy the model generated and save it with the version number in the models folder.
